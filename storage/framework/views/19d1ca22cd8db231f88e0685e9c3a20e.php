@@ -55,6 +55,8 @@
                     </header>
 
                     <main class="mt-6">
+                        <div id="order"></div>
+
                         <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
                             <a
                                 href="https://laravel.com/docs"
@@ -168,6 +170,8 @@
                 </div>
             </div>
         </div>
+        <?php echo app('Illuminate\Foundation\Vite')->reactRefresh(); ?>
+        <?php echo app('Illuminate\Foundation\Vite')(['resources/js/app.js']); ?>
     </body>
 </html>
 <?php /**PATH /var/www/html/resources/views/welcome.blade.php ENDPATH**/ ?>
